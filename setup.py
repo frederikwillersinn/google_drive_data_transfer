@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="google_drive_data_transfer",
-    version="0.2",
+    version="0.1",
     description="Basic file management on Google Drive",
     packages=["google_drive_data_transfer"],
     license="MIT",
