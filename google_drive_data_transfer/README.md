@@ -1,10 +1,10 @@
-# google_drive_data
+# google_drive_data_transfer
 
-google_drive_data is a simple Python package which is built based on
+google_drive_data_transfer is a simple Python package which is built based on
 [PyDrive2](https://docs.iterative.ai/PyDrive2/) and allows basic file management on
 Google Drive.
 
-## Features of google_drive_data
+## Features of google_drive_data_transfer
 
 The package contains the following features:
 
@@ -43,9 +43,9 @@ Options:
 
 ## How to install
 
-You can install google_drive_data with a regular pip command.
+You can install google_drive_data_transfer with a regular pip command.
 
-`$ pip install google_drive_data`
+`$ pip install google_drive_data_transfer`
 
 ## Quickstart
 
@@ -79,10 +79,12 @@ Parts of the Quickstart documentation were taken from the
 ### Download a file from Google Drive:
 
 Input:
+
 ````python
-from google_drive_data.GoogleDriveData import GoogleDriveData
+from google_drive_data_transfer.GoogleDriveDataTransfer import GoogleDriveDataTransfer
+
 auth_dir = 'path_to_client_secrets'
-drive = GoogleDriveData(auth_dir)
+drive = GoogleDriveDataTransfer(auth_dir)
 drive.download_file(file_name="file.csv")
 ````
 

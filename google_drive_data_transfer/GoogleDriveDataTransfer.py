@@ -8,10 +8,10 @@ from pydrive2.auth import GoogleAuth
 from pydrive2.drive import GoogleDrive
 
 
-class GoogleDriveData:
+class GoogleDriveDataTransfer:
     def __init__(self, auth_dir: Union[str, pathlib.Path]) -> None:
         """
-        Creates an instance of the GoogleDriveData.
+        Creates an instance of the class.
 
         :param auth_dir: directory with Google Drive client secrets
         """
@@ -29,7 +29,7 @@ class GoogleDriveData:
         Accesses the Google Drive client secrets and authenticates the user on Google
         Drive. This approach requires identification the first time and then not again.
 
-        :return: authenticated instance of the GoogleDriveData
+        :return: authenticated instance of the class
         """
         gauth = GoogleAuth()
         gauth.LoadCredentialsFile(os.path.join(self.auth_dir, "mycreds.txt"))
